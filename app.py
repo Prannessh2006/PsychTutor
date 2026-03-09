@@ -173,11 +173,17 @@ def chunk_text(text, chunk_size=500, overlap=100):
         chunks.append(chunk)
 
     return chunks
+    
+@st.cache_resource
+def load_model():
+    return SentenceTransformer("all-MiniLM-L6-v2")
+
+model = load_model()
 
 @st.cache_resource
 def build_db():
 
-    embed = SentenceTransformer(EMBED_MODEL)
+    embed = load_model()
 
     client = chromadb.PersistentClient(path=VECTOR_DB_PATH)
 
