@@ -1,13 +1,11 @@
 streamlit
-requests
 nltk
 pdfplumber
-tqdm
 sentence-transformers
 chromadb
 langchain
 langchain-groq
-torch
+torch==2.2.2
 transformers
 numpy
 pandas
