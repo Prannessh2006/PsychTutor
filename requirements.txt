@@ -1,14 +1,14 @@
 streamlit
-nltk
-pdfplumber
-sentence-transformers==2.7.0
-chromadb==0.5.5
 langchain
 langchain-groq
+chromadb
+sentence-transformers
+transformers
+scikit-learn
+pandas
+numpy
 torch==2.1.2+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
-transformers==4.41.2
-numpy==1.26.4
-pandas
-scikit-learn
-pillow
+nltk
+pdfplumber
+python-dotenv
