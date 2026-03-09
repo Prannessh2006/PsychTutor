@@ -10,6 +10,7 @@ import re
 from langchain_groq import ChatGroq
 import time
 os.environ["ANONYMIZED_TELEMETRY"] = "False"
+os.makedirs("chroma", exist_ok=True)
 
 st.set_page_config(
     page_title="PsychTutor",
